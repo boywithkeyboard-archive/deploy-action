@@ -1,7 +1,7 @@
 import { NodeSSH } from 'node-ssh'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { getInput, setFailed } from '@actions/core'
+import { getBooleanInput, getInput, setFailed } from '@actions/core'
 import { isIPv4 } from 'node:net'
 
 const run = async () => {
@@ -12,7 +12,7 @@ const run = async () => {
     const username = getInput('username', { required: true })
     const privateKey = getInput('privateKey', { required: true })
     const pm2 = getInput('pm2')
-    const dependencies = getInput('dependencies') === 'true' ? true : false
+    const dependencies = getBooleanInput('dependencies')
     const destination = getInput('destination', { required: true })
   
     if (!isIPv4(host))
