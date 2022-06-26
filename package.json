@@ -5,8 +5,7 @@
   "scripts": {
     "lint": "eslint src --ext .ts",
     "format": "eslint src --fix",
-    "build": "esbuild src/index.ts --bundle --minify --format=esm --legal-comments=none --platform=node --outfile=dist/index.js",
-    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js"
+    "build": "esbuild src/index.ts --bundle --minify --external:node-ssh --format=esm --legal-comments=none --platform=node --outfile=dist/index.js"
   },
   "repository": {
     "type": "git",
