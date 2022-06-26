@@ -1,6 +1,5 @@
 import { NodeSSH } from 'node-ssh'
-import { dirname, join } from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { join } from 'node:path'
 import { getBooleanInput, getInput, setFailed } from '@actions/core'
 import { isIPv4 } from 'node:net'
 
@@ -19,8 +18,7 @@ const run = async () => {
       throw new Error('Invalid Hostname')
   
     // deploy app
-    const __dirname = dirname(fileURLToPath(import.meta.url))
-    , ssh = new NodeSSH()
+    const ssh = new NodeSSH()
     
     await ssh.connect({
       host,

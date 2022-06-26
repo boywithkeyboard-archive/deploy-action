@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.0.2
+
+### Bug Fixes
+
+- fixed boolean input
+- fixed esm issue
+
 ## v0.0.1
 
 ### Bug Fixes
