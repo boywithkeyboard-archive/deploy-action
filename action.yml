@@ -1,4 +1,4 @@
-name: 'Deploy'
+name: 'azury/deploy'
 description: 'A Github Action for deploying (Node.js) applications to a VPS.'
 author: 'Samuel Kopp <opensource@azury.dev>'
 
