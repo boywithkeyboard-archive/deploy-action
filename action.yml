@@ -1,0 +1,29 @@
+name: 'Deploy'
+description: 'A Github Action for deploying (Node.js) applications to a VPS.'
+author: 'Samuel Kopp <opensource@azury.dev>'
+
+inputs:
+  host:
+    description: 'Hostname of the server.'
+    required: true
+  port:
+    decription: 'Port of the server.'
+    default: 22
+  username:
+    description: 'Username for authentication.'
+    required: true
+  privateKey:
+    description: 'SSH Key for authentication.'
+    required: true
+  pm2:
+    description: 'Rerun a PM2 process after deployment.'
+  dependencies:
+    description: 'Include package.json and package-lock.json and update remote NPM dependencies.'
+    default: false
+  destination:
+    description: 'The destination path on the server.'
+    required: true
+
+branding:
+  icon: 'server'
+  color: 'white'
