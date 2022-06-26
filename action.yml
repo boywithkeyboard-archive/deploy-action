@@ -27,3 +27,7 @@ inputs:
 branding:
   icon: 'server'
   color: 'white'
+
+runs:
+  using: 'node18'
+  main: 'dist/index.js'
