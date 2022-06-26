@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint src --ext .ts",
     "format": "eslint src --fix",
-    "build": "esbuild src/index.ts --bundle --minify --external:node-ssh --format=esm --legal-comments=none --platform=node --outfile=dist/index.js"
+    "build": "esbuild src/index.ts --bundle --minify --external:node-ssh --format=cjs --legal-comments=none --platform=node --outfile=dist/index.js"
   },
   "repository": {
     "type": "git",
