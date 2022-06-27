@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.0
+
+### New Features
+
+- added `file` option to deploy a different file than `dist/index.js`
+
 ## v0.0.4
 
 ### Bug Fixes
