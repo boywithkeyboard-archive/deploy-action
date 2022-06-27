@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint src --ext .ts",
     "format": "eslint src --fix",
-    "build": "esbuild src/index.ts --bundle --minify --external:node-ssh --format=cjs --legal-comments=none --platform=node --outfile=dist/index.js"
+    "build": "ncc build src/index.ts -o dist -m"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
     "@types/ssh2": "^0.5.52",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
-    "esbuild": "^0.14.47",
+    "@vercel/ncc": "^0.34.0",
     "eslint": "^8.18.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-unused-imports": "^2.0.0",
