@@ -12,6 +12,7 @@ const run = async () => {
     const pm2 = getInput('pm2')
     const dependencies = getBooleanInput('dependencies')
     const destination = getInput('destination', { required: true })
+    const file = getInput('file')
   
     if (!isIPv4(host))
       throw new Error('Invalid Hostname')
@@ -26,7 +27,7 @@ const run = async () => {
       privateKey
     })
     
-    await ssh.putFile('./dist/index.js', `${destination}/dist/index.js`)
+    await ssh.putFile(`./${file}`, `${destination}/${file}`)
     
     if (dependencies) {
       await ssh.putFile('./package.json', `${destination}/package.json`)
