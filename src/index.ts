@@ -1,5 +1,4 @@
 import { NodeSSH } from 'node-ssh'
-import { join } from 'node:path'
 import { getBooleanInput, getInput, setFailed } from '@actions/core'
 import { isIPv4 } from 'node:net'
 
@@ -27,11 +26,11 @@ const run = async () => {
       privateKey
     })
     
-    await ssh.putFile(join(__dirname, './dist/index.js'), `${destination}/dist/index.js`)
+    await ssh.putFile('./dist/index.js', `${destination}/dist/index.js`)
     
     if (dependencies) {
-      await ssh.putFile(join(__dirname, './package.json'), `${destination}/package.json`)
-      await ssh.putFile(join(__dirname, './package-lock.json'), `${destination}/package-lock.json`)
+      await ssh.putFile('./package.json', `${destination}/package.json`)
+      await ssh.putFile('./package-lock.json', `${destination}/package-lock.json`)
   
       await ssh.execCommand('npm i', { cwd: destination })
     }
