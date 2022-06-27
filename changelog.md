@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.0.4
+
+### Bug Fixes
+
+- fixed path to dist/index.js
+
 ## v0.0.3
 
 - replaced `esbuild` with `@vercel/ncc`
