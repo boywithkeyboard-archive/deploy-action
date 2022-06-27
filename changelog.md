@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.3
+
+- replaced `esbuild` with `@vercel/ncc`
+
 ## v0.0.2
 
 ### Bug Fixes
