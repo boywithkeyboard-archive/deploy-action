@@ -36,3 +36,8 @@ jobs:
               draft: false,
               prerelease: false
             })
+      
+      - name: Bump Major Version
+        run: |
+          git tag v0 -f
+          git push --tags -f
