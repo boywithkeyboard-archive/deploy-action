@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.1.2
+
+## Changes
+
+- made workflow more flexible
+
+### Dependencies
+
+- upgraded `@typescript-eslint/parser` to **5.30.0** in [#1](https://github.com/drgnjs/api/pull/1)
+- upgraded `@typescript-eslint/eslint-plugin` to **5.30.0** in [#2](https://github.com/drgnjs/api/pull/2)
+
 ## v0.1.0
 
 ### New Features
