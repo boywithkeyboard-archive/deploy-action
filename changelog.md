@@ -2,7 +2,7 @@
 
 ## v0.1.2
 
-## Changes
+### Changes
 
 - made workflow more flexible
 
