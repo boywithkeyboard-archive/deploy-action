@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.3
+
+### Dependencies
+
+- upgraded `@types/ssh2` to **1.11.0** in [#3](https://github.com/drgnjs/api/pull/3)
+
 ## v0.1.2
 
 ### Changes
