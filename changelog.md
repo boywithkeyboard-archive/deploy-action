@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.1.4
+
+### Changes
+
+- reduced frequency of dependabot updates
+
+### Dependencies
+
+- upgraded `@typescript-eslint/parser` to **5.30.3** in [#5](https://github.com/drgnjs/api/pull/5)
+- upgraded `@types/ssh2` to **1.11.2** in [#6](https://github.com/drgnjs/api/pull/6)
+- upgraded `@typescript-eslint/eslint-plugin` to **5.30.3** in [#7](https://github.com/drgnjs/api/pull/7)
+
 ## v0.1.3
 
 ### Dependencies
