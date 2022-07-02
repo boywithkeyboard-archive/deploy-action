@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.5
+
+### Dependencies
+
+- upgraded `eslint` to **8.19.0** in [#8](https://github.com/drgnjs/api/pull/8)
+
 ## v0.1.4
 
 ### Changes
