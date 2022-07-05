@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.6
+
+### Dependencies
+
+- upgraded `@typescript-eslint/parser` to **5.30.5** in [#9](https://github.com/drgnjs/api/pull/9)
+- upgraded `@types/node` to **18.0.1** in [#10](https://github.com/drgnjs/api/pull/10)
+- upgraded `@typescript-eslint/eslint-plugin` to **5.30.5** in [#11](https://github.com/drgnjs/api/pull/11)
+
 ## v0.1.5
 
 ### Dependencies
