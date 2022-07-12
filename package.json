@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.0.1",
-    "@types/ssh2": "^1.11.2",
+    "@types/ssh2": "^1.11.4",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.6",
     "@vercel/ncc": "^0.34.0",
