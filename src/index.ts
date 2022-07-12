@@ -1,6 +1,6 @@
-import { NodeSSH } from 'node-ssh'
-import { getBooleanInput, getInput, setFailed } from '@actions/core'
 import { isIPv4 } from 'node:net'
+import { getBooleanInput, getInput, setFailed } from '@actions/core'
+import { NodeSSH } from 'node-ssh'
 
 const run = async () => {
   try {
