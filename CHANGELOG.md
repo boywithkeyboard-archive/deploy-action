@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.1.8
+
+### Changes
+
+* renamed readme, license, and changelog 
+* bumped `eslint` from **8.19.0** to **8.20.0** in [#16](https://github.com/azurydev/deploy-action/pull/16)
+* bumped `@typescript-eslint/parser` from **5.30.6** to **5.30.7** in [#17](https://github.com/azurydev/deploy-action/pull/17)
+* bumped `@types/node` from **18.0.3** to **18.0.6** in [#18](https://github.com/azurydev/deploy-action/pull/18)
+* bumped `@typescript-eslint/eslint-plugin` from **5.30.6** to **5.30.7** in [#19](https://github.com/azurydev/deploy-action/pull/19)
+
 ## v0.1.7
 
 ### Dependencies
