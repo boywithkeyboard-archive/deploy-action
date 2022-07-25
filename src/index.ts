@@ -1,6 +1,8 @@
 import { isIPv4 } from 'node:net'
 import { getBooleanInput, getInput, setFailed } from '@actions/core'
 import { NodeSSH } from 'node-ssh'
+import getFiles from './modules/getFiles'
+import slash from 'slash'
 
 const run = async () => {
   try {
@@ -27,7 +29,22 @@ const run = async () => {
       privateKey
     })
     
-    await ssh.putFile(`./${file}`, `${destination}/${file}`)
+    if (file === 'dist') {
+      const files = []
+
+      for await (let f of getFiles('./dist')) {
+        f = slash(f)
+
+        files.push({
+          local: `./${f.substring(f.lastIndexOf('dist'))}`,
+          remote: `${destination}/${f.substring(f.lastIndexOf('dist'))}`
+        })
+      }
+
+      await ssh.putFiles(files)
+    } else {
+      await ssh.putFile(`./${file}`, `${destination}/${file}`)
+    }
     
     if (dependencies) {
       await ssh.putFile('./package.json', `${destination}/package.json`)

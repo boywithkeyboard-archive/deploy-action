@@ -25,7 +25,7 @@ inputs:
     required: true
   file:
     description: 'The file to deploy to your VPS.'
-    default: 'dist/index.js'
+    default: 'dist'
 
 branding:
   icon: 'server'
