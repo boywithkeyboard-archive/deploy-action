@@ -26,6 +26,9 @@ inputs:
   file:
     description: 'The file to deploy to your VPS.'
     default: 'dist'
+  directory:
+    description: 'Upload all files of a specified directory to the remote host.'
+    default: ''
 
 branding:
   icon: 'server'

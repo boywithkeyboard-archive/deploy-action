@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.11
+
+### New Features
+
+* feat: add `directory` option
+
+  Upload a whole directory instead of a single file.
+
 ## v0.1.10
 
 ### Dependencies
