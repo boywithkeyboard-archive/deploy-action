@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.12
+
+* fix: publish issue
+
 ## v0.1.11
 
 ### New Features
