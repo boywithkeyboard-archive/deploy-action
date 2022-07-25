@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.1.9
+
+### New Features
+
+* feat: add support for multiple files
+
+  If the `dist` directory contains multiple files, upload all files to the remote host.
+
+### Changes
+
+* build: add `rimraf`
+
+  Add `rimraf` to make sure unused files get removed.
+
+* build: migrate from `ncc` to `esbuild`
+
+* ci: increase frequency of dependabot updates
+
 ## v0.1.8
 
 ### Changes
