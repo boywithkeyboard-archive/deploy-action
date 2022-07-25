@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.10
+
+### Dependencies
+
+* chore(deps-dev): bump @types/node from 18.0.6 to 18.6.1 (#20)
+* chore(deps-dev): bump @types/ssh2 from 1.11.4 to 1.11.5 (#21)
+* chore(deps-dev): bump node-ssh from 12.0.4 to 12.0.5 (#22)
+
 ## v0.1.9
 
 ### New Features
