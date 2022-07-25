@@ -37,5 +37,6 @@ jobs:
           privateKey: ${{ secrets.SSH_KEY }}
           destination: /root/whatever
           dependencies: true # update remote package.json, package-lock.json, and dependencies
+          directory: /dist # upload all files from a directory
           pm2: 0 # pm2 process name or id
 ```

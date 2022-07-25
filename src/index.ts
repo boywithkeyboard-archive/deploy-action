@@ -15,6 +15,7 @@ const run = async () => {
     const dependencies = getBooleanInput('dependencies')
     const destination = getInput('destination', { required: true })
     const file = getInput('file')
+    const directory = getInput('directory')
   
     if (!isIPv4(host))
       throw new Error('Invalid Hostname')
@@ -29,21 +30,21 @@ const run = async () => {
       privateKey
     })
     
-    if (file === 'dist') {
+    if (directory.length > 0 && directory.startsWith('/')) {
       const files = []
 
-      for await (let f of getFiles('./dist')) {
+      for await (let f of getFiles(`.${directory}`)) {
         f = slash(f)
 
         files.push({
-          local: `./${f.substring(f.lastIndexOf('dist'))}`,
-          remote: `${destination}/${f.substring(f.lastIndexOf('dist'))}`
+          local: `.${f.substring(f.lastIndexOf(directory))}`,
+          remote: `${destination}${f.substring(f.lastIndexOf(directory) + directory.length)}`
         })
       }
 
       await ssh.putFiles(files)
     } else {
-      await ssh.putFile(`./${file}`, `${destination}/${file}`)
+      await ssh.putFile(`.${file}`, `${destination}${file}`)
     }
     
     if (dependencies) {
