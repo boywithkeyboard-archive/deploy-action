@@ -40,3 +40,8 @@ jobs:
           directory: /dist # upload all files from a directory
           pm2: 0 # pm2 process name or id
 ```
+
+<hr>
+<h3>Chat with us</h3>
+<a href='https://azury.dev/discord'><b>Join our Discord :D</b></a>
+<hr>
