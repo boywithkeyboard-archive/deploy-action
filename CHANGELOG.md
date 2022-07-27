@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.1.13
+
+### Changes
+
+* docs: add contact section to readme
+
+### Dependencies
+
+* chore(deps-dev): bump @typescript-eslint/eslint-plugin (#23)
+* chore(deps-dev): bump @typescript-eslint/parser from 5.30.7 to 5.31.0 (#24)
+* chore(deps): bump node-ssh from 12.0.5 to 13.0.0 (#25)
+
 ## v0.1.12
 
 * fix: publish issue
