@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.1.14
+
+### Dependencies
+
+* [**#26**](https://github.com/azurydev/deploy-action/pull/26) - chore(deps-dev): bump `esbuild` from **v0.14.50** to **v0.14.51**
+* [**#16**](https://github.com/azurydev/deploy-action/pull/16) - chore(deps-dev): bump `@types/node` from **v18.6.1** to **v18.6.2**
+
 ## v0.1.13
 
 ### Changes
