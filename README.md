@@ -1,6 +1,6 @@
 ## azurydev/deploy-action
 
-Please refer to [`action.yml`](https://github.com/azurydev/deploy-action/blob/dev/action.yml) for a full list of all features.
+Please refer to [`action.yml`](https://github.com/azurystudio/deploy-action/blob/dev/action.yml) for a full list of all features.
 
 ```yml
 name: 'Publish'
@@ -30,7 +30,7 @@ jobs:
         run: npm run build
 
       - name: Deploy App
-        uses: azurydev/deploy-action@v0
+        uses: azurystudio/deploy-action@v0
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
