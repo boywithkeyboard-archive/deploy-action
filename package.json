@@ -1,22 +1,11 @@
 {
-  "name": "deploy",
-  "description": "A Github Action for deploying (Node.js) applications to a VPS.",
+  "name": "deploy-action",
   "private": true,
   "scripts": {
     "lint": "eslint src --ext .ts",
     "format": "eslint src --fix",
     "build": "rimraf dist && esbuild src/index.ts --minify --bundle --platform=node --loader:.node=copy --format=cjs --legal-comments=none --outfile=dist/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/azurydev/deploy.git"
-  },
-  "author": "Samuel Kopp <opensource@azury.dev> (https://azury.dev)",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/azurydev/deploy/issues"
-  },
-  "homepage": "https://github.com/azurydev/deploy#readme",
   "dependencies": {
     "@actions/core": "^1.9.0",
     "node-ssh": "^13.0.0",
