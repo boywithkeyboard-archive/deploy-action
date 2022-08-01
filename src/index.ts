@@ -1,8 +1,8 @@
 import { isIPv4 } from 'node:net'
 import { getBooleanInput, getInput, setFailed } from '@actions/core'
 import { NodeSSH } from 'node-ssh'
-import getFiles from './modules/getFiles'
 import slash from 'slash'
+import getFiles from './modules/getFiles'
 
 const run = async () => {
   try {
