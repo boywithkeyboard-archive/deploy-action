@@ -1,5 +1,5 @@
-import { readdir } from 'fs/promises'
-import { resolve } from 'path'
+import { readdir } from 'node:fs/promises'
+import { resolve } from 'node:path'
 
 async function* getFiles(dir: string): AsyncIterableIterator<string> {
   const dirents = await readdir(dir, { withFileTypes: true })
