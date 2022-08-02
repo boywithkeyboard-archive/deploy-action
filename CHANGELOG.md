@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.16
+
+* ci: decrease frequency of dependabot updates
+* refactor: migrate to azury's style guide
+* refactor: use `node:` imports
+
 ## v0.1.15
 
 ### Changes
