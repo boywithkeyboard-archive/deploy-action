@@ -1,18 +1,9 @@
 {
+  "extends": "@azury/style/typescript",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "commonjs",
-    "rootDir": "src",
-    "outDir": "dist",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "alwaysStrict": true,
-    "strict": true,
-    "noImplicitOverride": true,
-    "removeComments": true,
-    "skipLibCheck": true,
-    "newLine": "crlf"
-  }
+    "module": "commonjs"
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
 }

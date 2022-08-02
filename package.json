@@ -12,7 +12,8 @@
     "slash": "^4.0.0"
   },
   "devDependencies": {
-    "@azury/eslint-config": "^1.0.1",
+    "@azury/eslint-config": "^1.0.2",
+    "@azury/style": "^1.0.0",
     "@types/node": "^18.6.2",
     "@types/ssh2": "^1.11.5",
     "esbuild": "^0.14.51",
