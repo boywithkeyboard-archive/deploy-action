@@ -1,5 +1,6 @@
 {
   "name": "deploy-action",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "lint": "eslint src",

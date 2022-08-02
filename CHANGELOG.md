@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.17
+
+* refactor: replace `rimraf` with `@unvented/empty`
+
 ## v0.1.16
 
 * ci: decrease frequency of dependabot updates
