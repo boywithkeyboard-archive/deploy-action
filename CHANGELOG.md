@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.18
+
+* chore: upgrade dependencies
+
 ## v0.1.17
 
 * refactor: replace `rimraf` with `@unvented/empty`
