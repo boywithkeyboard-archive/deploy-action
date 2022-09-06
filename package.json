@@ -13,7 +13,7 @@
     "slash": "^4.0.0"
   },
   "devDependencies": {
-    "@azury/eslint-config": "^1.0.6",
+    "@azury/eslint-config": "^1.0.7",
     "@azury/style": "^1.0.0",
     "@types/node": "^18.7.10",
     "@types/ssh2": "^1.11.5",
