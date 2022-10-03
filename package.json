@@ -10,7 +10,7 @@
   "dependencies": {
     "@actions/core": "^1.9.1",
     "node-ssh": "^13.0.0",
-    "slash": "^4.0.0"
+    "slash": "^5.0.0"
   },
   "devDependencies": {
     "@azury/eslint-config": "^1.0.7",
