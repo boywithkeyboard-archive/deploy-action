@@ -15,7 +15,7 @@
   "devDependencies": {
     "@azury/eslint-config": "^1.0.7",
     "@azury/style": "^1.0.0",
-    "@types/node": "^18.7.23",
+    "@types/node": "^18.8.1",
     "@types/ssh2": "^1.11.5",
     "@unvented/empty": "^1.0.4",
     "esbuild": "^0.15.9",
